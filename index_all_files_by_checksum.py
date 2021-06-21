@@ -5,8 +5,10 @@ from pathlib import Path
 import hashlib
 import pickle
 
-# index_all_files_by_checksum.py - walks the LrC Masters directory and
-#     calculates hash for all files (photos)
+# index_all_files_by_checksum.py - Walks the LrC Masters directory and
+#     calculates hash for all files (photos); creates a dict keyed
+#     by hash, with values a list of files which have the same hash.
+#     This dict is pickled.
 # Copyright (C) 2021  David Chin
 #
 # This program is free software: you can redistribute it and/or modify
